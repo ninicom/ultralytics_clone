@@ -34,7 +34,7 @@ def autopad(k, p=None, d=1):  # kernel, padding, dilation
     return p
 
 
-class ConvQ(nn.Module):
+class Conv(nn.Module):
     """Standard convolution with args(ch_in, ch_out, kernel, stride, padding, groups, dilation, activation)."""
 
     default_act = nn.SiLU()  # default activation
